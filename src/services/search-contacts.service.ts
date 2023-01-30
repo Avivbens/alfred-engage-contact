@@ -1,5 +1,7 @@
 // @ts-ignore
 import contacts from 'node-mac-contacts'
+import alfy from 'alfy'
+import { CACHE_CONTACTS_KEY, CACHE_TTL } from '../common/constants'
 import { AuthStatus } from '../models/auth-status.enum'
 import { IContact } from '../models/contact.model'
 import { SEARCH_FIELDS_CONFIG } from './search-contacts.config'
@@ -22,7 +24,9 @@ export function searchContacts(searchTerm: string): IContact[] {
 
     const lookFor = searchTerm.toLowerCase()
 
-    const allContacts: IContact[] = contacts.getAllContacts()
+    const allContacts: IContact[] = alfy.cache.get(CACHE_CONTACTS_KEY) ?? contacts.getAllContacts()
+    alfy.cache.set(CACHE_CONTACTS_KEY, allContacts, { maxAge: CACHE_TTL })
+
     const res = allContacts.filter((contact) => {
         const isMatchSome: boolean = SEARCH_FIELDS_CONFIG.some((fieldKey) => {
             const field = contact[fieldKey]
