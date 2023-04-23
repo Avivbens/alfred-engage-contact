@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>EA32942B-CBBB-4905-936E-5DE495CCC2A0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AECF4CFF-1543-49E4-883C-36E40E6003F7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Aviv Ben Shahar</string>
@@ -105,6 +118,23 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>'{query}', {variables}</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>AECF4CFF-1543-49E4-883C-36E40E6003F7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -116,6 +146,13 @@
 			<real>95</real>
 			<key>ypos</key>
 			<real>145</real>
+		</dict>
+		<key>AECF4CFF-1543-49E4-883C-36E40E6003F7</key>
+		<dict>
+			<key>xpos</key>
+			<real>695</real>
+			<key>ypos</key>
+			<real>450</real>
 		</dict>
 		<key>EA32942B-CBBB-4905-936E-5DE495CCC2A0</key>
 		<dict>

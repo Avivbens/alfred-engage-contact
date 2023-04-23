@@ -1,25 +1,20 @@
 import alfy from 'alfy'
-import { ContactPayload } from './models/contact-payload.model'
+import type { PhoneNumber } from 'libphonenumber-js'
+import { parsePhoneNumber } from 'libphonenumber-js'
 import open from 'open'
-// import { exec } from 'child_process'
+import { ContactPayload } from './models/contact-payload.model'
 ;(async () => {
     const rawInput: string = alfy.input
     const input: ContactPayload = JSON.parse(rawInput)
 
     const { phoneNumber: inputPhoneNumber, countryCode: inputCountryCode } = input
 
-    const validPhoneNumber: string = inputPhoneNumber.replace(/\D/g, '')
+    const { number }: PhoneNumber = parsePhoneNumber(inputPhoneNumber, inputCountryCode)
 
-    // take only the last 9 digits
-    const phoneNumber: string = validPhoneNumber.slice(-9)
-
-    const isHasCountryCode: boolean = validPhoneNumber.includes('+')
-    const withPrefix: string = isHasCountryCode ? validPhoneNumber : `${inputCountryCode}${phoneNumber}`
-
-    const urlNew: string = `whatsapp://send?phone=${withPrefix}`
+    const urlNew: string = `whatsapp://send?phone=${number}`
     open(urlNew)
 
-    // const url: string = `https://api.whatsapp.com/send?phone=${withPrefix}`
+    // const url: string = `https://api.whatsapp.com/send?phone=${number}`
 
     // const command: string = `
     // open -na 'Google Chrome' --args --new-window '${url}' &&

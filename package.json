@@ -6,7 +6,7 @@
     "type": "module",
     "scripts": {
         "build": "rm -rf dist && tsc-esm",
-        "start": "node dist/index.js",
+        "start:dev": "node dist/index.js --inspect",
         "test": "npm run build && npm run start",
         "postinstall": "alfy-init",
         "preuninstall": "alfy-cleanup",
@@ -28,6 +28,7 @@
     "dependencies": {
         "@digitak/tsc-esm": "^3.1.4",
         "alfy": "^1.1.0",
+        "libphonenumber-js": "^1.10.28",
         "node-mac-contacts": "^1.6.1",
         "open": "^9.1.0"
     },
@@ -36,6 +37,7 @@
         "husky": "^8.0.3",
         "prettier": "^2.8.3",
         "pretty-quick": "^3.1.3",
+        "ts-node": "^10.9.1",
         "typescript": "^4.9.4"
     }
 }

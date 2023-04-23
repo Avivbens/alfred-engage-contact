@@ -3,10 +3,12 @@ import { IContact } from './models/contact.model'
 import { searchContacts } from './services/search-contacts.service'
 import { Variables } from './common/variables'
 import { ContactPayload } from './models/contact-payload.model'
+import type { CountryCode } from 'libphonenumber-js'
+import { MAX_RESULTS_COUNT } from './common/constants'
 ;(() => {
     const input = alfy.input
     const data: IContact[] = searchContacts(input)
-    const countryCode: string = process.env[Variables.COUNTRY_CODE] ?? '1'
+    const countryCode: CountryCode = (process.env[Variables.COUNTRY_CODE] as CountryCode) ?? 'US'
 
     const items: ScriptFilterItem[] = data.map(({ firstName, lastName, phoneNumbers }: IContact) => {
         const payload: ContactPayload = { phoneNumber: phoneNumbers[0], countryCode }
@@ -15,16 +17,10 @@ import { ContactPayload } from './models/contact-payload.model'
             title: `${firstName} ${lastName}`,
             subtitle: `Phone: ${phoneNumbers[0]}`,
             arg: JSON.stringify(payload),
-            // mods: {
-            //     cmd: {
-            //         subtitle: `Open in Incognito Mode`,
-            //         arg: JSON.stringify({ url, profile, incognito: true }),
-            //     },
-            // },
         }
     })
 
-    const sliced = items.slice(0, 9)
+    const sliced = items.slice(0, MAX_RESULTS_COUNT - 1)
 
     alfy.output(sliced)
 })()
