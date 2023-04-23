@@ -1,4 +1,4 @@
-# Alfred Search Bookmark
+# Alfred Open WhatsApp
 
 ## Description
 
