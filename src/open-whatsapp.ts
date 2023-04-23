@@ -4,11 +4,14 @@ import { exec } from 'child_process'
     const { input } = alfy
     const validPhoneNumber = input.replace(/\D/g, '')
 
-    // TODO handle country code
-    const withPrefix = `972${validPhoneNumber.slice(1)}`
+    // take only the last 9 digits
+    const phoneNumber = validPhoneNumber.slice(-9)
+    const withPrefix = `972${phoneNumber}`
 
     const url = `https://api.whatsapp.com/send?phone=${withPrefix}`
 
-    const command = `open -na 'Google Chrome' '${url}'`
+    const command = `
+    open -na 'Google Chrome' --args --new-window '${url}' &&
+    (while [ $(osascript -e 'tell application "Google Chrome" to busy of window 1 as string') = "true" ]; do sleep 1; done && sleep 1 && osascript -e 'tell application "Google Chrome" to close window 1') >/dev/null 2>&1`
     exec(command)
 })()
