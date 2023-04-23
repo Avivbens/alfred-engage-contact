@@ -24,7 +24,11 @@ export function searchContacts(searchTerm: string): IContact[] {
 
     const lookFor = searchTerm.toLowerCase()
 
-    const allContacts: IContact[] = alfy.cache.get(CACHE_CONTACTS_KEY) ?? contacts.getAllContacts()
+    // when in debug mode - always fetch contacts from the system
+    const allContacts: IContact[] = alfy.debug
+        ? contacts.getAllContacts()
+        : alfy.cache.get(CACHE_CONTACTS_KEY) ?? contacts.getAllContacts()
+
     alfy.cache.set(CACHE_CONTACTS_KEY, allContacts, { maxAge: CACHE_TTL })
 
     const res = allContacts.filter((contact) => {
