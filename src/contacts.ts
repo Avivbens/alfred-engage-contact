@@ -1,12 +1,9 @@
 import alfy, { ScriptFilterItem } from 'alfy'
-import { CACHE_CONTACTS_KEY, CACHE_TTL } from './common/constants'
 import { IContact } from './models/contact.model'
 import { searchContacts } from './services/search-contacts.service'
 ;(() => {
     const input = alfy.input
-    const data: IContact[] = alfy.cache.get(CACHE_CONTACTS_KEY) ?? searchContacts(input)
-
-    alfy.cache.set(CACHE_CONTACTS_KEY, data, { maxAge: CACHE_TTL })
+    const data: IContact[] = searchContacts(input)
 
     const items: ScriptFilterItem[] = data.map(({ firstName, lastName, phoneNumbers }: IContact) => ({
         title: `${firstName} ${lastName}`,
