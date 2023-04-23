@@ -37,7 +37,8 @@ npm i -g alfred-open-whatsapp
 
 ## LIVE DEMO:
 
-![Live Demo](https://raw.githubusercontent.com/avivbens/alfred-open-whatsapp/HEAD/demo/demo-video.mp4)
+https://user-images.githubusercontent.com/77183871/233869370-4fb24627-7151-462f-99b9-8b20c34e7518.mp4
+
 
 <br>
 
