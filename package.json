@@ -11,7 +11,7 @@
         "lint": "eslint \"{src,test}/**/*.ts\"",
         "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix",
         "start:dev": "node dist/index.js --inspect",
-        "test": "npm run build && npm run start",
+        "test": "jest",
         "postinstall": "alfy-init",
         "preuninstall": "alfy-cleanup",
         "prepublish": "npm run build",
