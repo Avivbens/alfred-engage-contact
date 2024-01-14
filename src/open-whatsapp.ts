@@ -2,7 +2,7 @@ import alfy from 'alfy'
 import type { PhoneNumber } from 'libphonenumber-js'
 import { parsePhoneNumber } from 'libphonenumber-js'
 import open from 'open'
-import type { ContactPayload } from './models/contact-payload.model'
+import type { ContactPayload } from './models/contact-payload.model.js'
 ;(async () => {
     const rawInput: string = alfy.input
     const input: ContactPayload = JSON.parse(rawInput)

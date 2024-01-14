@@ -2,10 +2,10 @@
 // @ts-expect-error
 import contacts from 'node-mac-contacts'
 import alfy from 'alfy'
-import { CACHE_CONTACTS_KEY, CACHE_TTL } from '../common/constants'
-import { AuthStatus } from '../models/auth-status.enum'
-import type { IContact } from '../models/contact.model'
-import { SEARCH_FIELDS_CONFIG } from './search-contacts.config'
+import { CACHE_CONTACTS_KEY, CACHE_TTL } from '../common/constants.js'
+import { AuthStatus } from '../models/auth-status.enum.js'
+import type { IContact } from '../models/contact.model.js'
+import { SEARCH_FIELDS_CONFIG } from './search-contacts.config.js'
 
 export function isAuth(): boolean {
     const status: AuthStatus = contacts.getAuthStatus()
