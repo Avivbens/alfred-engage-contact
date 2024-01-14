@@ -1,8 +1,9 @@
-import alfy, { ScriptFilterItem } from 'alfy'
-import { IContact } from './models/contact.model'
+import type { ScriptFilterItem } from 'alfy'
+import alfy from 'alfy'
+import type { IContact } from './models/contact.model'
 import { searchContacts } from './services/search-contacts.service'
 import { Variables } from './common/variables'
-import { ContactPayload } from './models/contact-payload.model'
+import type { ContactPayload } from './models/contact-payload.model'
 import type { CountryCode } from 'libphonenumber-js'
 import { MAX_RESULTS_COUNT } from './common/constants'
 ;(() => {

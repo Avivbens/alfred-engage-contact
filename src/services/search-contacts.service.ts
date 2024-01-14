@@ -1,9 +1,10 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import contacts from 'node-mac-contacts'
 import alfy from 'alfy'
 import { CACHE_CONTACTS_KEY, CACHE_TTL } from '../common/constants'
 import { AuthStatus } from '../models/auth-status.enum'
-import { IContact } from '../models/contact.model'
+import type { IContact } from '../models/contact.model'
 import { SEARCH_FIELDS_CONFIG } from './search-contacts.config'
 
 export function isAuth(): boolean {

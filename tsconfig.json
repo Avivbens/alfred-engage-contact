@@ -26,5 +26,5 @@
         "useUnknownInCatchVariables": false
     },
     "exclude": ["node_modules", "dist"],
-    "include": ["src/**/*"]
+    "include": ["src/**/*", ".eslintrc.cjs"]
 }
