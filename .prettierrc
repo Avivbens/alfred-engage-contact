@@ -3,5 +3,8 @@
     "singleQuote": true,
     "trailingComma": "all",
     "semi": false,
-    "printWidth": 120
+    "printWidth": 120,
+    "importOrder": ["^@.*/(.*)$", "^[./]"],
+    "importOrderSeparation": false,
+    "importOrderSortSpecifiers": true
 }

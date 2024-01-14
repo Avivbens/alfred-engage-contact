@@ -1,4 +1,4 @@
-// @ts-ignore
+// @ts-expect-error
 import contacts from 'node-mac-contacts'
 import alfy from 'alfy'
 import { CACHE_CONTACTS_KEY, CACHE_TTL } from '../common/constants'

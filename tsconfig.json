@@ -1,15 +1,30 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "module": "esnext",
-        "moduleResolution": "Node",
-        "lib": ["es2016", "esnext", "dom"],
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "declaration": true,
+        "declarationMap": true,
+        "emitDecoratorMetadata": true,
         "esModuleInterop": true,
+        "experimentalDecorators": true,
         "forceConsistentCasingInFileNames": true,
-        "strict": true,
+        "incremental": false,
+        "lib": ["es2017", "es7", "es6", "DOM"],
+        "module": "CommonJS",
+        "noFallthroughCasesInSwitch": false,
+        "noImplicitAny": true,
+        "outDir": "./dist",
+        "removeComments": true,
+        "rootDir": "./src",
         "skipLibCheck": true,
-        "outDir": "dist",
-        "rootDir": "src"
+        "sourceMap": true,
+        "strict": true,
+        "strictBindCallApply": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": false,
+        "target": "es2017",
+        "useUnknownInCatchVariables": false
     },
-    "exclude": ["dist"]
+    "exclude": ["node_modules", "dist"],
+    "include": ["src/**/*"]
 }
