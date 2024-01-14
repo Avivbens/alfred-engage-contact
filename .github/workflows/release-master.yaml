@@ -59,7 +59,7 @@ jobs:
 
             - name: Install Dependencies
               run: |
-                  npm ci --no-fund --no-audit --ignore-scripts
+                  npm ci --no-fund --no-audit --ignore-scripts --force
 
             - name: Build
               run: npm run build
