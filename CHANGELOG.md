@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Avivbens/alfred-open-whatsapp/compare/v1.2.0...v1.2.1) (2024-01-14)
+
+
+### Bug Fixes
+
+* broken scripts for ecma module ([a786635](https://github.com/Avivbens/alfred-open-whatsapp/commit/a786635763f3a9742601775ebe17aa698456450a))
+
 # [1.2.0](https://github.com/Avivbens/alfred-open-whatsapp/compare/v1.1.2...v1.2.0) (2024-01-14)
 
 

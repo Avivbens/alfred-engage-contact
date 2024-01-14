@@ -1,6 +1,6 @@
 {
     "name": "alfred-open-whatsapp",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Alfred Workflow to search contacts and open WhatsApp",
     "main": "dist/index.js",
     "type": "module",
