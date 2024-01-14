@@ -9,3 +9,4 @@ packages
 # don't line the docs
 docs
 .eslintrc.js
+reset.d.ts
