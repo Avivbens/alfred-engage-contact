@@ -2,7 +2,7 @@ import alfy from 'alfy'
 import type { PhoneNumber } from 'libphonenumber-js'
 import { parsePhoneNumber } from 'libphonenumber-js'
 import open from 'open'
-import { ContactPayload } from './models/contact-payload.model'
+import type { ContactPayload } from './models/contact-payload.model'
 ;(async () => {
     const rawInput: string = alfy.input
     const input: ContactPayload = JSON.parse(rawInput)
@@ -11,7 +11,7 @@ import { ContactPayload } from './models/contact-payload.model'
 
     const { number }: PhoneNumber = parsePhoneNumber(inputPhoneNumber, inputCountryCode)
 
-    const urlNew: string = `whatsapp://send?phone=${number}`
+    const urlNew = `whatsapp://send?phone=${number}`
     open(urlNew)
 
     // const url: string = `https://api.whatsapp.com/send?phone=${number}`
