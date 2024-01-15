@@ -21,11 +21,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>EA32942B-CBBB-4905-936E-5DE495CCC2A0</key>
+		<key>164D986D-F257-4443-A939-70E2455F64E1</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>AECF4CFF-1543-49E4-883C-36E40E6003F7</string>
+				<string>253DA4D7-3E59-4785-9555-6016C14C78A8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -34,6 +34,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>EA32942B-CBBB-4905-936E-5DE495CCC2A0</key>
+		<array/>
 	</dict>
 	<key>createdby</key>
 	<string>Aviv Ben Shahar</string>
@@ -45,6 +47,29 @@
 	<string>Open WhatsApp</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node dist/open-whatsapp.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>EA32942B-CBBB-4905-936E-5DE495CCC2A0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -103,7 +128,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node dist/open-whatsapp.js "$1"</string>
+				<string>./node_modules/.bin/run-node dist/clear-cache.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -114,24 +139,28 @@
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>EA32942B-CBBB-4905-936E-5DE495CCC2A0</string>
+			<string>253DA4D7-3E59-4785-9555-6016C14C78A8</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>'{query}', {variables}</string>
-				<key>cleardebuggertext</key>
-				<false/>
-				<key>processoutputs</key>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>owclear</string>
+				<key>subtext</key>
+				<string>Clear Contacts Cahce</string>
+				<key>text</key>
+				<string>Clear Cache</string>
+				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.debug</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>AECF4CFF-1543-49E4-883C-36E40E6003F7</string>
+			<string>164D986D-F257-4443-A939-70E2455F64E1</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -147,19 +176,26 @@
 			<key>ypos</key>
 			<real>145</real>
 		</dict>
-		<key>AECF4CFF-1543-49E4-883C-36E40E6003F7</key>
+		<key>164D986D-F257-4443-A939-70E2455F64E1</key>
 		<dict>
 			<key>xpos</key>
-			<real>695</real>
+			<real>100</real>
 			<key>ypos</key>
-			<real>450</real>
+			<real>315</real>
+		</dict>
+		<key>253DA4D7-3E59-4785-9555-6016C14C78A8</key>
+		<dict>
+			<key>xpos</key>
+			<real>495</real>
+			<key>ypos</key>
+			<real>315</real>
 		</dict>
 		<key>EA32942B-CBBB-4905-936E-5DE495CCC2A0</key>
 		<dict>
 			<key>xpos</key>
 			<real>495</real>
 			<key>ypos</key>
-			<real>350</real>
+			<real>145</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
