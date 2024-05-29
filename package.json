@@ -47,8 +47,7 @@
     "dependencies": {
         "alfy": "^1.1.0",
         "libphonenumber-js": "^1.10.28",
-        "node-mac-contacts": "^1.6.1",
-        "open": "^9.1.0"
+        "node-mac-contacts": "^1.6.1"
     },
     "devDependencies": {
         "@commitlint/cli": "^18.4.3",
