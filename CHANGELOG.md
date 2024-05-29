@@ -1,3 +1,11 @@
+## [1.2.2](https://github.com/Avivbens/alfred-open-whatsapp/compare/v1.2.1...v1.2.2) (2024-05-29)
+
+
+### Bug Fixes
+
+* **deps:** bump-up all deps ([1c62e4b](https://github.com/Avivbens/alfred-open-whatsapp/commit/1c62e4b5c786e82e5f84313b9022f98a1794697b))
+* remove `open` lib - use `execPrm` ([8aa0ce3](https://github.com/Avivbens/alfred-open-whatsapp/commit/8aa0ce3422faef550c36448cf44b5e81b2d47db2))
+
 ## [1.2.1](https://github.com/Avivbens/alfred-open-whatsapp/compare/v1.2.0...v1.2.1) (2024-01-14)
 
 
