@@ -8,6 +8,6 @@ coverage
 packages
 # don't line the docs
 docs
-.eslintrc.js
+.eslintrc.cjs
 reset.d.ts
 commitlint.config.js

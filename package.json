@@ -25,6 +25,7 @@
             "email": "avivbens87@gmail.com"
         }
     ],
+    "type": "module",
     "main": "dist/index.js",
     "scripts": {
         "prebuild": "rm -rf ./dist",
