@@ -23,9 +23,9 @@
         "strictBindCallApply": true,
         "strictNullChecks": true,
         "strictPropertyInitialization": false,
-        "target": "es2017",
+        "target": "ES2021",
         "useUnknownInCatchVariables": false
     },
-    "exclude": ["node_modules", "dist"],
-    "include": ["src/**/*", ".eslintrc.cjs"]
+    "exclude": ["node_modules"],
+    "include": ["src/**/*"]
 }

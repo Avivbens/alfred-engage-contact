@@ -10,3 +10,4 @@ packages
 docs
 .eslintrc.js
 reset.d.ts
+commitlint.config.js
