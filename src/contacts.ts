@@ -1,11 +1,12 @@
 import type { ScriptFilterItem } from 'alfy'
 import alfy from 'alfy'
-import type { IContact } from './models/contact.model.js'
-import { searchContacts } from './services/search-contacts.service.js'
-import { Variables } from './common/variables.js'
-import type { ContactPayload } from './models/contact-payload.model.js'
 import type { CountryCode } from 'libphonenumber-js'
 import { MAX_RESULTS_COUNT } from './common/constants.js'
+import { Variables } from './common/variables.js'
+import type { ContactPayload } from './models/contact-payload.model.js'
+import type { IContact } from './models/contact.model.js'
+import { searchContacts } from './services/search-contacts.service.js'
+
 ;(() => {
     const input = alfy.input
     const data: IContact[] = searchContacts(input)
