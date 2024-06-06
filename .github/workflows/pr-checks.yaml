@@ -8,7 +8,7 @@ on:
 jobs:
     PR-checks:
         # https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/using-self-hosted-runners-in-a-workflow
-        runs-on: ubuntu-latest
+        runs-on: macos-latest
         name: PR Health Checks 🐛
         steps:
             - name: 📀 Checkout

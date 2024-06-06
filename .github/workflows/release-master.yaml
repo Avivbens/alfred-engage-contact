@@ -19,7 +19,7 @@ concurrency:
 jobs:
     checks:
         name: ✅ Check for Release
-        runs-on: ubuntu-latest
+        runs-on: macos-latest
         timeout-minutes: 15
 
         env:
@@ -38,7 +38,7 @@ jobs:
 
     release:
         name: 📦 Release Version
-        runs-on: ubuntu-latest
+        runs-on: macos-latest
         timeout-minutes: 60
         needs:
             - checks
