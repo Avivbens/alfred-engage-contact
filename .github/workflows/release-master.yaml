@@ -61,13 +61,6 @@ jobs:
             - name: 🖥️ Setup Env
               uses: ./.github/workflows/install
 
-            - name: Build
-              run: npm run build
-
-            - name: Setup NPM
-              run: |
-                  npm config -L user set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
-
             - name: Release
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

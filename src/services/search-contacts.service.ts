@@ -1,4 +1,4 @@
-import alfy from 'alfy'
+import type { FastAlfred } from 'fast-alfred'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import contacts from 'node-mac-contacts'
@@ -16,21 +16,21 @@ export function requestAuth(): void {
     contacts.requestAccess()
 }
 
-export function searchContacts(searchTerm: string): IContact[] {
+export function searchContacts(alfredClient: FastAlfred): IContact[] {
     const isHasAccess: boolean = isAuth()
     if (!isHasAccess) {
         requestAuth()
         return []
     }
 
-    const lookFor = searchTerm.toLowerCase()
+    const lookFor = alfredClient.input.toLowerCase()
 
     // when in debug mode - always fetch contacts from the system
-    const allContacts: IContact[] = alfy.debug
+    const allContacts: IContact[] = alfredClient.alfredInfo.isDebug()
         ? contacts.getAllContacts()
-        : alfy.cache.get(CACHE_CONTACTS_KEY) ?? contacts.getAllContacts()
+        : alfredClient.cache.get(CACHE_CONTACTS_KEY) ?? contacts.getAllContacts()
 
-    alfy.cache.set(CACHE_CONTACTS_KEY, allContacts, { maxAge: CACHE_TTL })
+    alfredClient.cache.setWithTTL(CACHE_CONTACTS_KEY, allContacts, { maxAge: CACHE_TTL })
 
     const res = allContacts.filter((contact) => {
         const isMatchSome: boolean = SEARCH_FIELDS_CONFIG.some((fieldKey) => {
