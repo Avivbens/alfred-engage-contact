@@ -1,13 +1,13 @@
 # Alfred Open WhatsApp
 
 > [!CAUTION]
-> This NPM is no longer supported. Please use GitHub releases instead [in here](https://github.com/Avivbens/alfred-search-bookmark/releases/latest).
+> This NPM is no longer supported. Please use GitHub releases instead [in here](https://github.com/Avivbens/alfred-open-whatsapp/releases/latest).
 
 <div align=center>
 
-[![npm](https://img.shields.io/npm/v/alfred-search-bookmark)](https://www.npmjs.com/package/alfred-search-bookmark)
-[![npm](https://img.shields.io/npm/dt/alfred-search-bookmark)](https://www.npmjs.com/package/alfred-search-bookmark)
-![GitHub](https://img.shields.io/github/license/avivbens/alfred-search-bookmark)
+[![npm](https://img.shields.io/npm/v/alfred-open-whatsapp)](https://www.npmjs.com/package/alfred-open-whatsapp)
+[![npm](https://img.shields.io/npm/dt/alfred-open-whatsapp)](https://www.npmjs.com/package/alfred-open-whatsapp)
+![GitHub](https://img.shields.io/github/license/avivbens/alfred-open-whatsapp)
 
 </div>
 
