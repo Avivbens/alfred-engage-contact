@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/Avivbens/alfred-open-whatsapp/compare/v1.2.3...v1.2.4) (2024-06-06)
+
+
+### Bug Fixes
+
+* update `npm` readme ([83c8312](https://github.com/Avivbens/alfred-open-whatsapp/commit/83c8312dbc029ff55fa2191408b2ad3b8e822caf))
+
 ## [1.2.3](https://github.com/Avivbens/alfred-open-whatsapp/compare/v1.2.2...v1.2.3) (2024-06-06)
 
 
