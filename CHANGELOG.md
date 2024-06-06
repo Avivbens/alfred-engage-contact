@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/Avivbens/alfred-open-whatsapp/compare/v2.0.0...v2.0.1) (2024-06-06)
+
+
+### Bug Fixes
+
+* setup type `module` - `fast-alfred` restriction ([daefcbe](https://github.com/Avivbens/alfred-open-whatsapp/commit/daefcbe3844ad7fd190b48d96118c863e2d93b9c))
+
 # [2.0.0](https://github.com/Avivbens/alfred-open-whatsapp/compare/v1.2.4...v2.0.0) (2024-06-06)
 
 
