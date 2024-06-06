@@ -1,13 +1,14 @@
-# Alfred Open WhatsApp
-
-> [!CAUTION]
-> This NPM is no longer supported. Please use GitHub releases instead [in here](https://github.com/Avivbens/alfred-open-whatsapp/releases/latest).
-
 <div align=center>
 
-[![npm](https://img.shields.io/npm/v/alfred-open-whatsapp)](https://www.npmjs.com/package/alfred-open-whatsapp)
-[![npm](https://img.shields.io/npm/dt/alfred-open-whatsapp)](https://www.npmjs.com/package/alfred-open-whatsapp)
-![GitHub](https://img.shields.io/github/license/avivbens/alfred-open-whatsapp)
+# Alfred Open WhatsApp
+
+<br>
+
+[![Latest Version Downloads](https://img.shields.io/github/downloads/avivbens/alfred-open-whatsapp/latest/total?label=Latest%20Version%20Downloads&color=green)](https://github.com/avivbens/alfred-open-whatsapp/releases/latest)
+[![Latest Version](https://img.shields.io/github/v/release/avivbens/alfred-open-whatsapp?label=Latest%20Version&color=green)](https://github.com/avivbens/alfred-open-whatsapp/releases/latest)
+[![Total Downloads](https://img.shields.io/github/downloads/avivbens/alfred-open-whatsapp/total?label=Total%20Downloads&color=blue)](https://github.com/avivbens/alfred-open-whatsapp/releases)
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/kcao7snkgx)
 
 </div>
 
@@ -15,7 +16,17 @@
 
 Search contacts and open a chat with them with [Alfred](https://www.alfredapp.com/).
 
-<br>
+### Install via GitHub Releases :sparkles:
+
+```bash
+repo_name="Avivbens/alfred-open-whatsapp"
+download_url=$(curl -s "https://api.github.com/repos/$repo_name/releases/latest" | grep "browser_download_url.*alfredworkflow" | cut -d '"' -f 4)
+
+curl -fsSLk $download_url -o ~/Desktop/alfred-open-whatsapp.alfredworkflow
+open ~/Desktop/alfred-open-whatsapp.alfredworkflow
+```
+
+<hr>
 
 ## Usage
 
