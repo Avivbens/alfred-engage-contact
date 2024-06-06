@@ -20,7 +20,7 @@ module.exports = {
          *
          * We have to change the build & assets path in order the script would be able to load the native module
          */
-        assets: ['node_modules/node-mac-contacts/build/Release/contacts.node'],
+        assets: ['./src/assets/contacts.node'],
         assetsDir: 'Release',
         targetDir: 'build',
     },
