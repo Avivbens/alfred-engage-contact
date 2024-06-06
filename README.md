@@ -1,5 +1,16 @@
 # Alfred Open WhatsApp
 
+> [!CAUTION]
+> This NPM is no longer supported. Please use GitHub releases instead [in here](https://github.com/Avivbens/alfred-open-whatsapp/releases/latest).
+
+<div align=center>
+
+[![npm](https://img.shields.io/npm/v/alfred-open-whatsapp)](https://www.npmjs.com/package/alfred-open-whatsapp)
+[![npm](https://img.shields.io/npm/dt/alfred-open-whatsapp)](https://www.npmjs.com/package/alfred-open-whatsapp)
+![GitHub](https://img.shields.io/github/license/avivbens/alfred-open-whatsapp)
+
+</div>
+
 ## Description
 
 Search contacts and open a chat with them with [Alfred](https://www.alfredapp.com/).
@@ -38,7 +49,6 @@ npm i -g alfred-open-whatsapp
 ## LIVE DEMO:
 
 https://user-images.githubusercontent.com/77183871/233869370-4fb24627-7151-462f-99b9-8b20c34e7518.mp4
-
 
 <br>
 
