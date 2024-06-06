@@ -1,6 +1,6 @@
 {
     "name": "alfred-open-whatsapp",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Alfred Workflow to search contacts and open WhatsApp",
     "keywords": [
         "alfred",
