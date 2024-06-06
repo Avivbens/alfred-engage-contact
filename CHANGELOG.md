@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/Avivbens/alfred-open-whatsapp/compare/v1.2.4...v2.0.0) (2024-06-06)
+
+
+### Features
+
+* migrate to `fast-alfred` 🚀 ([f41f62f](https://github.com/Avivbens/alfred-open-whatsapp/commit/f41f62fbecc2b307dbe14a0616b39dc0de33b860))
+
+
+### BREAKING CHANGES
+
+* `npm` is not supported anymore - download via GitHub Releases
+
 ## [1.2.4](https://github.com/Avivbens/alfred-open-whatsapp/compare/v1.2.3...v1.2.4) (2024-06-06)
 
 ### Bug Fixes
