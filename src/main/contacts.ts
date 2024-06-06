@@ -1,11 +1,11 @@
 import type { AlfredScriptFilter } from 'fast-alfred'
 import { FastAlfred } from 'fast-alfred'
 import type { CountryCode } from 'libphonenumber-js'
-import { DEFAULT_MAX_RESULTS_COUNT } from '../common/constants'
-import { Variables } from '../common/variables'
-import type { ContactPayload } from '../models/contact-payload.model'
-import type { IContact } from '../models/contact.model'
-import { searchContacts } from '../services/search-contacts.service'
+import { DEFAULT_MAX_RESULTS_COUNT } from '../common/constants.js'
+import { Variables } from '../common/variables.js'
+import type { ContactPayload } from '../models/contact-payload.model.js'
+import type { IContact } from '../models/contact.model.js'
+import { searchContacts } from '../services/search-contacts.service.js'
 
 ;(() => {
     const alfredClient = new FastAlfred()

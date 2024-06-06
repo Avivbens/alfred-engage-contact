@@ -12,8 +12,6 @@ ${homepage}
  */
 module.exports = {
     bundlerOptions: {
-        minify: false,
-
         /**
          * Essential to include the native module
          *
