@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/Avivbens/alfred-open-whatsapp/compare/v1.2.2...v1.2.3) (2024-06-06)
+
+
+### Bug Fixes
+
+* deprecate `npm` option - use GitHub Releases 🥷 ([53993b4](https://github.com/Avivbens/alfred-open-whatsapp/commit/53993b44de8d5dc6b16ef8508cc79eb2c2ffa0c4))
+
 ## [1.2.2](https://github.com/Avivbens/alfred-open-whatsapp/compare/v1.2.1...v1.2.2) (2024-05-29)
 
 
