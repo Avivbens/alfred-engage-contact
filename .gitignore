@@ -1,4 +1,6 @@
 node_modules
 dist
+esbuild
+build
 .DS_Store
 .eslintcache
