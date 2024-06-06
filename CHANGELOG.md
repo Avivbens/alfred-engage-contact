@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/Avivbens/alfred-open-whatsapp/compare/v2.0.2...v2.0.3) (2024-06-06)
+
+
+### Bug Fixes
+
+* include `.node` file in this repo as an asset ([0e35aa2](https://github.com/Avivbens/alfred-open-whatsapp/commit/0e35aa2bcb8e1318fca417f883a00e0a8d86a4c4))
+
 ## [2.0.2](https://github.com/Avivbens/alfred-open-whatsapp/compare/v2.0.1...v2.0.2) (2024-06-06)
 
 
