@@ -38,6 +38,7 @@ A list of all mathced contacts will be displayed, and you can select a contact b
 -   WhatsApp: `ecw`
 -   SMS: `ecs`
 -   Call: `ecc`
+-   Mail: `ecm`
 
 Once you select a contact, the workflow will open the related app with the selected contact.
 

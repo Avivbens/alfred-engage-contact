@@ -7,6 +7,7 @@ Supported apps:
 - SMS
 - Call
 - WhatsApp
+- Email
 
 See the workflow codebase in here:
 ${homepage}
