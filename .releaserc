@@ -1,6 +1,6 @@
 {
     "$schema": "https://json.schemastore.org/semantic-release.json",
-    "repositoryUrl": "https://github.com/Avivbens/alfred-open-whatsapp.git",
+    "repositoryUrl": "https://github.com/Avivbens/alfred-engage-contact.git",
     "branches": [
         "+([0-9])?(.{+([0-9]),x}).x",
         "master",
@@ -48,9 +48,9 @@
             {
                 "assets": [
                     {
-                        "path": "./build/alfred-open-whatsapp.alfredworkflow",
-                        "label": "alfred-open-whatsapp.alfredworkflow",
-                        "name": "alfred-open-whatsapp.alfredworkflow"
+                        "path": "./build/alfred-engage-contact.alfredworkflow",
+                        "label": "alfred-engage-contact.alfredworkflow",
+                        "name": "alfred-engage-contact.alfredworkflow"
                     }
                 ]
             }

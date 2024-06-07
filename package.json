@@ -1,7 +1,7 @@
 {
-    "name": "alfred-open-whatsapp",
+    "name": "alfred-engage-contact",
     "version": "2.1.0",
-    "description": "Alfred Workflow to search contacts and open WhatsApp",
+    "description": "Alfred Workflow to search contacts and engage with them",
     "keywords": [
         "alfred",
         "workflow",
@@ -9,10 +9,10 @@
         "contacts",
         "search"
     ],
-    "homepage": "https://github.com/Avivbens/alfred-open-whatsapp",
+    "homepage": "https://github.com/Avivbens/alfred-engage-contact",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Avivbens/alfred-open-whatsapp.git"
+        "url": "git+https://github.com/Avivbens/alfred-engage-contact.git"
     },
     "license": "MIT",
     "author": {
@@ -29,7 +29,7 @@
     "main": "dist/index.js",
     "scripts": {
         "prebuild": "rm -rf ./dist",
-        "build": "tsc -p tsconfig.json",
+        "build": "tsc -p tsconfig.json && tsc-alias -p tsconfig.json",
         "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
         "lint": "eslint \"{src,test}/**/*.ts\"",
         "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix",
@@ -39,7 +39,7 @@
         "test": "jest"
     },
     "dependencies": {
-        "fast-alfred": "^1.3.3",
+        "fast-alfred": "^1.3.4",
         "fuse.js": "^7.0.0",
         "libphonenumber-js": "^1.11.2",
         "node-mac-contacts": "^1.7.2"
@@ -73,6 +73,7 @@
         "sort-package-json": "^2.10.0",
         "ts-loader": "^9.2.3",
         "ts-node": "^10.9.2",
+        "tsc-alias": "^1.8.10",
         "tsconfig-paths": "^4.2.0",
         "typescript": "^5.4.5"
     },

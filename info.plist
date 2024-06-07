@@ -3,12 +3,51 @@
 <plist version="1.0">
   <dict>
     <key>bundleid</key>
-    <string>com.alfredapp.open-whatsapp</string>
+    <string>com.alfredapp.engage-contact</string>
     <key>category</key>
     <string>Tools</string>
     <key>connections</key>
     <dict>
+      <key>0B935763-800C-48CC-9AC6-938A999A89A8</key>
+      <array>
+        <dict>
+          <key>destinationuid</key>
+          <string>EA32942B-CBBB-4905-936E-5DE495CCC2A0</string>
+          <key>modifiers</key>
+          <integer>0</integer>
+          <key>modifiersubtext</key>
+          <string></string>
+          <key>vitoclose</key>
+          <false></false>
+        </dict>
+      </array>
       <key>0D0645C0-EC0C-45FA-823E-FCC07F34732B</key>
+      <array>
+        <dict>
+          <key>destinationuid</key>
+          <string>EA32942B-CBBB-4905-936E-5DE495CCC2A0</string>
+          <key>modifiers</key>
+          <integer>0</integer>
+          <key>modifiersubtext</key>
+          <string></string>
+          <key>vitoclose</key>
+          <false></false>
+        </dict>
+      </array>
+      <key>2C4CF4B2-1195-4429-B7C4-CAF6746D8722</key>
+      <array>
+        <dict>
+          <key>destinationuid</key>
+          <string>EA32942B-CBBB-4905-936E-5DE495CCC2A0</string>
+          <key>modifiers</key>
+          <integer>0</integer>
+          <key>modifiersubtext</key>
+          <string></string>
+          <key>vitoclose</key>
+          <false></false>
+        </dict>
+      </array>
+      <key>8568F7A7-ABF6-49AA-9EDA-CB0C5429CE07</key>
       <array>
         <dict>
           <key>destinationuid</key>
@@ -40,13 +79,160 @@
     <key>createdby</key>
     <string>Aviv Ben Shahar</string>
     <key>description</key>
-    <string>Alfred Workflow to search contacts and open WhatsApp</string>
+    <string>Alfred Workflow to search contacts and engage with them</string>
     <key>disabled</key>
     <false></false>
     <key>name</key>
-    <string>Open WhatsApp</string>
+    <string>Engage Contact</string>
     <key>objects</key>
     <array>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>alfredfiltersresults</key>
+          <false></false>
+          <key>alfredfiltersresultsmatchmode</key>
+          <integer>0</integer>
+          <key>argumenttreatemptyqueryasnil</key>
+          <true></true>
+          <key>argumenttrimmode</key>
+          <integer>0</integer>
+          <key>argumenttype</key>
+          <integer>0</integer>
+          <key>escaping</key>
+          <integer>102</integer>
+          <key>keyword</key>
+          <string>ecw</string>
+          <key>queuedelaycustom</key>
+          <integer>3</integer>
+          <key>queuedelayimmediatelyinitially</key>
+          <false></false>
+          <key>queuedelaymode</key>
+          <integer>0</integer>
+          <key>queuemode</key>
+          <integer>1</integer>
+          <key>runningsubtext</key>
+          <string>Searching...</string>
+          <key>script</key>
+          <string>./build/Release/run-node.sh build/contacts.js "$1" "whatsapp"</string>
+          <key>scriptargtype</key>
+          <integer>1</integer>
+          <key>scriptfile</key>
+          <string></string>
+          <key>subtext</key>
+          <string>Open in WhatsApp</string>
+          <key>title</key>
+          <string>Search for Contacts...</string>
+          <key>type</key>
+          <integer>5</integer>
+          <key>withspace</key>
+          <true></true>
+        </dict>
+        <key>type</key>
+        <string>alfred.workflow.input.scriptfilter</string>
+        <key>uid</key>
+        <string>0D0645C0-EC0C-45FA-823E-FCC07F34732B</string>
+        <key>version</key>
+        <integer>3</integer>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>alfredfiltersresults</key>
+          <false></false>
+          <key>alfredfiltersresultsmatchmode</key>
+          <integer>0</integer>
+          <key>argumenttreatemptyqueryasnil</key>
+          <true></true>
+          <key>argumenttrimmode</key>
+          <integer>0</integer>
+          <key>argumenttype</key>
+          <integer>0</integer>
+          <key>escaping</key>
+          <integer>102</integer>
+          <key>keyword</key>
+          <string>ecc</string>
+          <key>queuedelaycustom</key>
+          <integer>3</integer>
+          <key>queuedelayimmediatelyinitially</key>
+          <false></false>
+          <key>queuedelaymode</key>
+          <integer>0</integer>
+          <key>queuemode</key>
+          <integer>1</integer>
+          <key>runningsubtext</key>
+          <string>Searching...</string>
+          <key>script</key>
+          <string>./build/Release/run-node.sh build/contacts.js "$1" "call"</string>
+          <key>scriptargtype</key>
+          <integer>1</integer>
+          <key>scriptfile</key>
+          <string></string>
+          <key>subtext</key>
+          <string>Start a call</string>
+          <key>title</key>
+          <string>Search for Contacts...</string>
+          <key>type</key>
+          <integer>5</integer>
+          <key>withspace</key>
+          <true></true>
+        </dict>
+        <key>type</key>
+        <string>alfred.workflow.input.scriptfilter</string>
+        <key>uid</key>
+        <string>8568F7A7-ABF6-49AA-9EDA-CB0C5429CE07</string>
+        <key>version</key>
+        <integer>3</integer>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>alfredfiltersresults</key>
+          <false></false>
+          <key>alfredfiltersresultsmatchmode</key>
+          <integer>0</integer>
+          <key>argumenttreatemptyqueryasnil</key>
+          <true></true>
+          <key>argumenttrimmode</key>
+          <integer>0</integer>
+          <key>argumenttype</key>
+          <integer>0</integer>
+          <key>escaping</key>
+          <integer>102</integer>
+          <key>keyword</key>
+          <string>ecs</string>
+          <key>queuedelaycustom</key>
+          <integer>3</integer>
+          <key>queuedelayimmediatelyinitially</key>
+          <false></false>
+          <key>queuedelaymode</key>
+          <integer>0</integer>
+          <key>queuemode</key>
+          <integer>1</integer>
+          <key>runningsubtext</key>
+          <string>Searching...</string>
+          <key>script</key>
+          <string>./build/Release/run-node.sh build/contacts.js "$1" "sms"</string>
+          <key>scriptargtype</key>
+          <integer>1</integer>
+          <key>scriptfile</key>
+          <string></string>
+          <key>subtext</key>
+          <string>Open in SMS</string>
+          <key>title</key>
+          <string>Search for Contacts...</string>
+          <key>type</key>
+          <integer>5</integer>
+          <key>withspace</key>
+          <true></true>
+        </dict>
+        <key>type</key>
+        <string>alfred.workflow.input.scriptfilter</string>
+        <key>uid</key>
+        <string>2C4CF4B2-1195-4429-B7C4-CAF6746D8722</string>
+        <key>version</key>
+        <integer>3</integer>
+      </dict>
       <dict>
         <key>config</key>
         <dict>
@@ -55,7 +241,7 @@
           <key>escaping</key>
           <integer>102</integer>
           <key>script</key>
-          <string>./build/Release/run-node.sh build/open-whatsapp.js "$1"</string>
+          <string>./build/Release/run-node.sh build/engage-contact.js "$1"</string>
           <key>scriptargtype</key>
           <integer>1</integer>
           <key>scriptfile</key>
@@ -86,7 +272,7 @@
           <key>escaping</key>
           <integer>102</integer>
           <key>keyword</key>
-          <string>ow</string>
+          <string>ecm</string>
           <key>queuedelaycustom</key>
           <integer>3</integer>
           <key>queuedelayimmediatelyinitially</key>
@@ -98,13 +284,13 @@
           <key>runningsubtext</key>
           <string>Searching...</string>
           <key>script</key>
-          <string>./build/Release/run-node.sh build/contacts.js "$1"</string>
+          <string>./build/Release/run-node.sh build/contacts.js "$1" "mail"</string>
           <key>scriptargtype</key>
           <integer>1</integer>
           <key>scriptfile</key>
           <string></string>
           <key>subtext</key>
-          <string></string>
+          <string>Send an email</string>
           <key>title</key>
           <string>Search for Contacts...</string>
           <key>type</key>
@@ -115,7 +301,7 @@
         <key>type</key>
         <string>alfred.workflow.input.scriptfilter</string>
         <key>uid</key>
-        <string>0D0645C0-EC0C-45FA-823E-FCC07F34732B</string>
+        <string>0B935763-800C-48CC-9AC6-938A999A89A8</string>
         <key>version</key>
         <integer>3</integer>
       </dict>
@@ -125,7 +311,7 @@
           <key>argumenttype</key>
           <integer>2</integer>
           <key>keyword</key>
-          <string>owclear</string>
+          <string>ecr</string>
           <key>subtext</key>
           <string>Clear contacts cache</string>
           <key>text</key>
@@ -165,39 +351,65 @@
       </dict>
     </array>
     <key>readme</key>
-    <string>Search contacts and open a chat with them with Alfred ✨
+    <string>Search contacts and engage with them via Alfred ✨
+
+Supported apps:
+- SMS
+- Call
+- WhatsApp
 
 See the workflow codebase in here:
-https://github.com/Avivbens/alfred-open-whatsapp</string>
+https://github.com/Avivbens/alfred-engage-contact</string>
     <key>uidata</key>
     <dict>
+      <key>0B935763-800C-48CC-9AC6-938A999A89A8</key>
+      <dict>
+        <key>xpos</key>
+        <integer>75</integer>
+        <key>ypos</key>
+        <integer>475</integer>
+      </dict>
       <key>0D0645C0-EC0C-45FA-823E-FCC07F34732B</key>
       <dict>
         <key>xpos</key>
         <integer>75</integer>
         <key>ypos</key>
-        <integer>185</integer>
+        <integer>65</integer>
       </dict>
-      <key>6EC31C4D-D182-4389-A6B1-282BA93F5ACE</key>
-      <dict>
-        <key>xpos</key>
-        <integer>475</integer>
-        <key>ypos</key>
-        <integer>395</integer>
-      </dict>
-      <key>EA32942B-CBBB-4905-936E-5DE495CCC2A0</key>
-      <dict>
-        <key>xpos</key>
-        <integer>470</integer>
-        <key>ypos</key>
-        <integer>185</integer>
-      </dict>
-      <key>EF6C4CFE-EBD3-4B86-8B85-573CA33646CA</key>
+      <key>2C4CF4B2-1195-4429-B7C4-CAF6746D8722</key>
       <dict>
         <key>xpos</key>
         <integer>75</integer>
         <key>ypos</key>
-        <integer>395</integer>
+        <integer>335</integer>
+      </dict>
+      <key>6EC31C4D-D182-4389-A6B1-282BA93F5ACE</key>
+      <dict>
+        <key>xpos</key>
+        <integer>480</integer>
+        <key>ypos</key>
+        <integer>865</integer>
+      </dict>
+      <key>8568F7A7-ABF6-49AA-9EDA-CB0C5429CE07</key>
+      <dict>
+        <key>xpos</key>
+        <integer>75</integer>
+        <key>ypos</key>
+        <integer>195</integer>
+      </dict>
+      <key>EA32942B-CBBB-4905-936E-5DE495CCC2A0</key>
+      <dict>
+        <key>xpos</key>
+        <integer>920</integer>
+        <key>ypos</key>
+        <integer>400</integer>
+      </dict>
+      <key>EF6C4CFE-EBD3-4B86-8B85-573CA33646CA</key>
+      <dict>
+        <key>xpos</key>
+        <integer>80</integer>
+        <key>ypos</key>
+        <integer>865</integer>
       </dict>
     </dict>
     <key>userconfigurationconfig</key>
@@ -1245,6 +1457,6 @@ https://github.com/Avivbens/alfred-open-whatsapp</string>
     <key>version</key>
     <string>2.1.0</string>
     <key>webaddress</key>
-    <string>https://github.com/Avivbens/alfred-open-whatsapp</string>
+    <string>https://github.com/Avivbens/alfred-engage-contact</string>
   </dict>
 </plist>
