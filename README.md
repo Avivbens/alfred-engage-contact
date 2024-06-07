@@ -14,7 +14,7 @@
 
 ## Description
 
-Search contacts and open a chat with them with [Alfred](https://www.alfredapp.com/).
+Search contacts and engage with them via [Alfred](https://www.alfredapp.com/).
 
 ### Install via GitHub Releases :sparkles:
 
@@ -30,8 +30,18 @@ open ~/Desktop/alfred-engage-contact.alfredworkflow
 
 ## Usage
 
-Search contacts via the keyword `ow`.
-Once you select a contact, a chat will be opened with the WhatsApp app.
+Search contacts via the keyword `c<RELATED_APP>`.
+A list of all mathced contacts will be displayed, and you can select a contact by pressing `Enter`.
+
+### Supported Apps
+
+-   WhatsApp: `ecw`
+-   SMS: `ecs`
+-   Call: `ecc`
+
+Once you select a contact, the workflow will open the related app with the selected contact.
+
+## Supported Phone Number Formats
 
 The workflow can accept a default country code, which will be used if the contact does not have a country code.
 
@@ -45,17 +55,3 @@ All formats of phone numbers are supported, including:
 -   `+1 (808) 1234 567`
 -   `(808)1234567`
 -   etc ...
-
-# Examples
-
-## LIVE DEMO:
-
-https://user-images.githubusercontent.com/77183871/233869370-4fb24627-7151-462f-99b9-8b20c34e7518.mp4
-
-<br>
-
-## Search contact with keyword `ow`:
-
-![Search contact](https://raw.githubusercontent.com/avivbens/alfred-engage-contact/HEAD/demo/search.png)
-
-<br>

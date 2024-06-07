@@ -22,7 +22,7 @@ export function getContacts(alfredClient: FastAlfred): IContact[] {
         return []
     }
 
-    const cacheContacts: IContact[] = alfredClient.cache.get(CACHE_CONTACTS_KEY) ?? contacts.getAllContacts()
+    const cacheContacts: IContact[] | null = alfredClient.cache.get(CACHE_CONTACTS_KEY)
     if (cacheContacts) {
         return cacheContacts
     }
