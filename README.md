@@ -30,8 +30,8 @@ open ~/Desktop/alfred-engage-contact.alfredworkflow
 
 ## Usage
 
-Search contacts via the keyword `c<RELATED_APP>`.
-A list of all mathced contacts will be displayed, and you can select a contact by pressing `Enter`.
+Search contacts via the keyword `ec<RELATED_APP>`.
+A list of all matched contacts will be displayed, and you can select a contact by pressing `Enter`.
 
 ### Supported Apps
 
