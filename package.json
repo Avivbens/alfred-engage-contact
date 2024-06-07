@@ -1,7 +1,7 @@
 {
-    "name": "alfred-open-whatsapp",
+    "name": "alfred-engage-contact",
     "version": "2.1.0",
-    "description": "Alfred Workflow to search contacts and open WhatsApp",
+    "description": "Alfred Workflow to search contacts and engage with them",
     "keywords": [
         "alfred",
         "workflow",
@@ -9,10 +9,10 @@
         "contacts",
         "search"
     ],
-    "homepage": "https://github.com/Avivbens/alfred-open-whatsapp",
+    "homepage": "https://github.com/Avivbens/alfred-engage-contact",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Avivbens/alfred-open-whatsapp.git"
+        "url": "git+https://github.com/Avivbens/alfred-engage-contact.git"
     },
     "license": "MIT",
     "author": {

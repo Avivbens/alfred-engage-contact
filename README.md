@@ -4,9 +4,9 @@
 
 <br>
 
-[![Latest Version Downloads](https://img.shields.io/github/downloads/avivbens/alfred-open-whatsapp/latest/total?label=Latest%20Version%20Downloads&color=green)](https://github.com/avivbens/alfred-open-whatsapp/releases/latest)
-[![Latest Version](https://img.shields.io/github/v/release/avivbens/alfred-open-whatsapp?label=Latest%20Version&color=green)](https://github.com/avivbens/alfred-open-whatsapp/releases/latest)
-[![Total Downloads](https://img.shields.io/github/downloads/avivbens/alfred-open-whatsapp/total?label=Total%20Downloads&color=blue)](https://github.com/avivbens/alfred-open-whatsapp/releases)
+[![Latest Version Downloads](https://img.shields.io/github/downloads/avivbens/alfred-engage-contact/latest/total?label=Latest%20Version%20Downloads&color=green)](https://github.com/avivbens/alfred-engage-contact/releases/latest)
+[![Latest Version](https://img.shields.io/github/v/release/avivbens/alfred-engage-contact?label=Latest%20Version&color=green)](https://github.com/avivbens/alfred-engage-contact/releases/latest)
+[![Total Downloads](https://img.shields.io/github/downloads/avivbens/alfred-engage-contact/total?label=Total%20Downloads&color=blue)](https://github.com/avivbens/alfred-engage-contact/releases)
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/kcao7snkgx)
 
@@ -19,11 +19,11 @@ Search contacts and open a chat with them with [Alfred](https://www.alfredapp.co
 ### Install via GitHub Releases :sparkles:
 
 ```bash
-repo_name="Avivbens/alfred-open-whatsapp"
+repo_name="Avivbens/alfred-engage-contact"
 download_url=$(curl -s "https://api.github.com/repos/$repo_name/releases/latest" | grep "browser_download_url.*alfredworkflow" | cut -d '"' -f 4)
 
-curl -fsSLk $download_url -o ~/Desktop/alfred-open-whatsapp.alfredworkflow
-open ~/Desktop/alfred-open-whatsapp.alfredworkflow
+curl -fsSLk $download_url -o ~/Desktop/alfred-engage-contact.alfredworkflow
+open ~/Desktop/alfred-engage-contact.alfredworkflow
 ```
 
 <hr>
@@ -56,6 +56,6 @@ https://user-images.githubusercontent.com/77183871/233869370-4fb24627-7151-462f-
 
 ## Search contact with keyword `ow`:
 
-![Search contact](https://raw.githubusercontent.com/avivbens/alfred-open-whatsapp/HEAD/demo/search.png)
+![Search contact](https://raw.githubusercontent.com/avivbens/alfred-engage-contact/HEAD/demo/search.png)
 
 <br>

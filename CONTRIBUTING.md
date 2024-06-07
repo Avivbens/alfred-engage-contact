@@ -1,6 +1,6 @@
-# Contributing to `alfred-open-whatsapp`
+# Contributing to `alfred-engage-contact`
 
-Thank you for your interest in contributing to `alfred-open-whatsapp` :tada: !
+Thank you for your interest in contributing to `alfred-engage-contact` :tada: !
 
 We welcome contributions from everyone.
 
@@ -16,7 +16,7 @@ To get started, follow these steps:
 
 ```bash
 npx fast-alfred -t $(cat package.json | jq -r '.version')
-(cd build && open alfred-open-whatsapp.alfredworkflow)
+(cd build && open alfred-engage-contact.alfredworkflow)
 ```
 
 6. Review your changes with your Alfred app

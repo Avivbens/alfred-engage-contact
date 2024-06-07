@@ -1,7 +1,12 @@
 const { author, description, homepage } = require('./package.json')
 
 const README = `
-Search contacts and open a chat with them with Alfred ✨
+Search contacts and engage with them via Alfred ✨
+
+Supported apps:
+- SMS
+- Call
+- WhatsApp
 
 See the workflow codebase in here:
 ${homepage}
@@ -25,7 +30,7 @@ module.exports = {
         targetDir: 'build',
     },
     workflowMetadata: {
-        name: 'Open WhatsApp',
+        name: 'Engage Contact',
         category: 'Tools',
         createdby: author.name,
         webaddress: homepage,

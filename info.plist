@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>bundleid</key>
-    <string>com.alfredapp.open-whatsapp</string>
+    <string>com.alfredapp.engage-contact</string>
     <key>category</key>
     <string>Tools</string>
     <key>connections</key>
@@ -55,7 +55,7 @@
           <key>escaping</key>
           <integer>102</integer>
           <key>script</key>
-          <string>./build/Release/run-node.sh build/open-whatsapp.js "$1"</string>
+          <string>./build/Release/run-node.sh build/engage-contact.js "$1"</string>
           <key>scriptargtype</key>
           <integer>1</integer>
           <key>scriptfile</key>
@@ -168,7 +168,7 @@
     <string>Search contacts and open a chat with them with Alfred ✨
 
 See the workflow codebase in here:
-https://github.com/Avivbens/alfred-open-whatsapp</string>
+https://github.com/Avivbens/alfred-engage-contact</string>
     <key>uidata</key>
     <dict>
       <key>0D0645C0-EC0C-45FA-823E-FCC07F34732B</key>
@@ -1245,6 +1245,6 @@ https://github.com/Avivbens/alfred-open-whatsapp</string>
     <key>version</key>
     <string>2.1.0</string>
     <key>webaddress</key>
-    <string>https://github.com/Avivbens/alfred-open-whatsapp</string>
+    <string>https://github.com/Avivbens/alfred-engage-contact</string>
   </dict>
 </plist>
