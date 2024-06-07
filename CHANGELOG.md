@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/Avivbens/alfred-open-whatsapp/compare/v2.0.3...v2.1.0) (2024-06-07)
+
+
+### Features
+
+* support fuzzy-search, refactor code structure ✨ ([4fcb431](https://github.com/Avivbens/alfred-open-whatsapp/commit/4fcb4312350186ecb8dbe0d4fd15936ba20c9c53))
+
 ## [2.0.3](https://github.com/Avivbens/alfred-open-whatsapp/compare/v2.0.2...v2.0.3) (2024-06-06)
 
 
