@@ -357,6 +357,7 @@ Supported apps:
 - SMS
 - Call
 - WhatsApp
+- Email
 
 See the workflow codebase in here:
 https://github.com/Avivbens/alfred-engage-contact</string>
@@ -1455,7 +1456,7 @@ https://github.com/Avivbens/alfred-engage-contact</string>
       </dict>
     </array>
     <key>version</key>
-    <string>3.0.0</string>
+    <string>3.0.1</string>
     <key>webaddress</key>
     <string>https://github.com/Avivbens/alfred-engage-contact</string>
   </dict>

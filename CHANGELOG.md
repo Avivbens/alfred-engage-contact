@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/Avivbens/alfred-engage-contact/compare/v3.0.0...v3.0.1) (2024-06-07)
+
+
+### Bug Fixes
+
+* **docs:** add email to supported platforms ([e340da1](https://github.com/Avivbens/alfred-engage-contact/commit/e340da13e795af4be681052bee05379843d4d1ab))
+
 # [3.0.0](https://github.com/Avivbens/alfred-engage-contact/compare/v2.1.0...v3.0.0) (2024-06-07)
 
 
