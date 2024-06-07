@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/Avivbens/alfred-engage-contact/compare/v3.0.1...v3.0.2) (2024-06-07)
+
+
+### Bug Fixes
+
+* install latest `fast-alfred` - change according to `esm` instructions 🥷 ([79945c8](https://github.com/Avivbens/alfred-engage-contact/commit/79945c8440916a997e2c06a2141735b7779b039a))
+
 ## [3.0.1](https://github.com/Avivbens/alfred-engage-contact/compare/v3.0.0...v3.0.1) (2024-06-07)
 
 
