@@ -1,11 +1,8 @@
 import { FastAlfred } from 'fast-alfred'
 import type { PhoneNumber } from 'libphonenumber-js'
 import { parsePhoneNumber } from 'libphonenumber-js'
-import { exec } from 'node:child_process'
-import { promisify } from 'node:util'
+import { execPromise } from '@common/utils.js'
 import type { ContactPayload } from '@models/contact-payload.model.js'
-
-const execPrm = promisify(exec)
 
 ;(async () => {
     const alfredClient = new FastAlfred()
@@ -18,5 +15,5 @@ const execPrm = promisify(exec)
 
     const urlNew = `whatsapp://send?phone=${number}`
 
-    await execPrm(`open ${urlNew}`)
+    await execPromise(`open ${urlNew}`)
 })()
