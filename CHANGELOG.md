@@ -1,3 +1,23 @@
+# [3.0.0](https://github.com/Avivbens/alfred-engage-contact/compare/v2.1.0...v3.0.0) (2024-06-07)
+
+
+### Bug Fixes
+
+* rename repo ([b29aab9](https://github.com/Avivbens/alfred-engage-contact/commit/b29aab9cc4f603a23227a0d7ed9526638a3cb873))
+* search by email address too ([28a0b7c](https://github.com/Avivbens/alfred-engage-contact/commit/28a0b7cf2db589b328b5bb4f011adccd2ef789f7))
+
+
+### Features
+
+* support `sms`, `whatsapp` and `call` features ([2367bef](https://github.com/Avivbens/alfred-engage-contact/commit/2367bef446542a17adfab1dae88a29534d343df0))
+* support input plamform ([f27d4dd](https://github.com/Avivbens/alfred-engage-contact/commit/f27d4dd9c69b29acde4ab1a1b904007f0481ef0a))
+* support mail option, better display of contacts info ([5ca4e20](https://github.com/Avivbens/alfred-engage-contact/commit/5ca4e2045d69a42a9325fc0b17c15f922f4da7c6))
+
+
+### BREAKING CHANGES
+
+* repo renamed, as well as the alfred workflow
+
 # [2.1.0](https://github.com/Avivbens/alfred-open-whatsapp/compare/v2.0.3...v2.1.0) (2024-06-07)
 
 
