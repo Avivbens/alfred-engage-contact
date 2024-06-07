@@ -15,7 +15,12 @@ import { buildOpenUrl } from '@services/platform-url-builder.service.js'
 
         const { number }: PhoneNumber = parsePhoneNumber(inputPhoneNumber, inputCountryCode)
 
-        const openUrl = buildOpenUrl(platform, number)
+        const parsedInput = {
+            ...input,
+            phoneNumber: number,
+        }
+
+        const openUrl = buildOpenUrl(platform, parsedInput)
 
         await execPromise(`open ${openUrl}`)
     } catch (error) {

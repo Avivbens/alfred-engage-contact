@@ -44,12 +44,10 @@ import { searchContacts } from '@services/search.service.js'
                 platform: platform as SupportedPlatform,
             }
 
-            const subtitle =
-                phoneNumbers.length > 0
-                    ? `Phone: ${phoneNumbers[0]}`
-                    : emailAddresses.length > 0
-                      ? `Email: ${emailAddresses[0]}`
-                      : ''
+            const emailSubtitle = emailAddresses.length ? `Email: ${emailAddresses[0]}` : ''
+            const phoneSubtitle = phoneNumbers.length ? `Phone: ${phoneNumbers[0]}` : ''
+
+            const subtitle = [phoneSubtitle, emailSubtitle].filter(Boolean).join(' | ')
 
             return {
                 title: `${firstName} ${lastName}`,

@@ -1,18 +1,39 @@
+import type { ContactPayload } from '@models/contact-payload.model.js'
 import type { SupportedPlatform } from '@models/platform.model.js'
 
-const PLATFORMS_URLS: Record<SupportedPlatform, (phoneNumber: string) => string> = {
-    whatsapp: (phoneNumber: string) => `whatsapp://send?phone=${phoneNumber}`,
-    sms: (phoneNumber: string) => `sms:${phoneNumber}`,
-    call: (phoneNumber: string) => `tel:${phoneNumber}`,
+const PLATFORMS_URLS: Record<SupportedPlatform, (referrer: string) => string> = {
+    whatsapp: (referrer: string) => `whatsapp://send?phone=${referrer}`,
+    sms: (referrer: string) => `sms:${referrer}`,
+    call: (referrer: string) => `tel:${referrer}`,
+    mail: (referrer: string) => `mailto:${referrer}`,
 }
 
-export function buildOpenUrl(platform: SupportedPlatform, phoneNumber: string): string {
+const EXTRACT_REFERRER: Record<SupportedPlatform, keyof ContactPayload> = {
+    call: 'phoneNumber',
+    mail: 'emailAddress',
+    sms: 'phoneNumber',
+    whatsapp: 'phoneNumber',
+}
+
+export function buildOpenUrl(platform: SupportedPlatform, payload: ContactPayload): string {
     const urlBuilder = PLATFORMS_URLS[platform]
 
     if (!urlBuilder) {
         throw new Error(`Unsupported platform: ${platform}`)
     }
 
-    const res = urlBuilder(phoneNumber)
+    const referrerKey = EXTRACT_REFERRER[platform]
+
+    if (!referrerKey) {
+        throw new Error(`Unsupported platform: ${platform}`)
+    }
+
+    const referrer = payload[referrerKey]
+
+    if (!referrer) {
+        throw new Error(`Referrer is empty: ${referrerKey}`)
+    }
+
+    const res = urlBuilder(referrer)
     return res
 }

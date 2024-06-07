@@ -8,6 +8,19 @@
     <string>Tools</string>
     <key>connections</key>
     <dict>
+      <key>0B935763-800C-48CC-9AC6-938A999A89A8</key>
+      <array>
+        <dict>
+          <key>destinationuid</key>
+          <string>EA32942B-CBBB-4905-936E-5DE495CCC2A0</string>
+          <key>modifiers</key>
+          <integer>0</integer>
+          <key>modifiersubtext</key>
+          <string></string>
+          <key>vitoclose</key>
+          <false></false>
+        </dict>
+      </array>
       <key>0D0645C0-EC0C-45FA-823E-FCC07F34732B</key>
       <array>
         <dict>
@@ -246,6 +259,55 @@
       <dict>
         <key>config</key>
         <dict>
+          <key>alfredfiltersresults</key>
+          <false></false>
+          <key>alfredfiltersresultsmatchmode</key>
+          <integer>0</integer>
+          <key>argumenttreatemptyqueryasnil</key>
+          <true></true>
+          <key>argumenttrimmode</key>
+          <integer>0</integer>
+          <key>argumenttype</key>
+          <integer>0</integer>
+          <key>escaping</key>
+          <integer>102</integer>
+          <key>keyword</key>
+          <string>ecm</string>
+          <key>queuedelaycustom</key>
+          <integer>3</integer>
+          <key>queuedelayimmediatelyinitially</key>
+          <false></false>
+          <key>queuedelaymode</key>
+          <integer>0</integer>
+          <key>queuemode</key>
+          <integer>1</integer>
+          <key>runningsubtext</key>
+          <string>Searching...</string>
+          <key>script</key>
+          <string>./build/Release/run-node.sh build/contacts.js "$1" "mail"</string>
+          <key>scriptargtype</key>
+          <integer>1</integer>
+          <key>scriptfile</key>
+          <string></string>
+          <key>subtext</key>
+          <string>Send an email</string>
+          <key>title</key>
+          <string>Search for Contacts...</string>
+          <key>type</key>
+          <integer>5</integer>
+          <key>withspace</key>
+          <true></true>
+        </dict>
+        <key>type</key>
+        <string>alfred.workflow.input.scriptfilter</string>
+        <key>uid</key>
+        <string>0B935763-800C-48CC-9AC6-938A999A89A8</string>
+        <key>version</key>
+        <integer>3</integer>
+      </dict>
+      <dict>
+        <key>config</key>
+        <dict>
           <key>argumenttype</key>
           <integer>2</integer>
           <key>keyword</key>
@@ -300,6 +362,13 @@ See the workflow codebase in here:
 https://github.com/Avivbens/alfred-engage-contact</string>
     <key>uidata</key>
     <dict>
+      <key>0B935763-800C-48CC-9AC6-938A999A89A8</key>
+      <dict>
+        <key>xpos</key>
+        <integer>75</integer>
+        <key>ypos</key>
+        <integer>475</integer>
+      </dict>
       <key>0D0645C0-EC0C-45FA-823E-FCC07F34732B</key>
       <dict>
         <key>xpos</key>
