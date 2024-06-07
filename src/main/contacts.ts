@@ -35,21 +35,29 @@ import { searchContacts } from '@services/search.service.js'
 
     const filteredContacts = searchContacts(contacts, searchTerm, sliceAmount)
 
-    const items: AlfredScriptFilter['items'] = filteredContacts.map(
-        ({ firstName, lastName, phoneNumbers }: IContact) => {
+    const items: AlfredScriptFilter['items'] = filteredContacts
+        .map(({ firstName, lastName, phoneNumbers, emailAddresses }: IContact) => {
             const payload: ContactPayload = {
                 phoneNumber: phoneNumbers[0],
+                emailAddress: emailAddresses[0],
                 countryCode,
                 platform: platform as SupportedPlatform,
             }
 
+            const subtitle =
+                phoneNumbers.length > 0
+                    ? `Phone: ${phoneNumbers[0]}`
+                    : emailAddresses.length > 0
+                      ? `Email: ${emailAddresses[0]}`
+                      : ''
+
             return {
                 title: `${firstName} ${lastName}`,
-                subtitle: `Phone: ${phoneNumbers[0]}`,
+                subtitle,
                 arg: JSON.stringify(payload),
             }
-        },
-    )
+        })
+        .filter(({ subtitle }) => subtitle)
 
     alfredClient.output({ items })
 })()

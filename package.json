@@ -29,7 +29,7 @@
     "main": "dist/index.js",
     "scripts": {
         "prebuild": "rm -rf ./dist",
-        "build": "tsc -p tsconfig.json",
+        "build": "tsc -p tsconfig.json && tsc-alias -p tsconfig.json",
         "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
         "lint": "eslint \"{src,test}/**/*.ts\"",
         "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix",
@@ -73,6 +73,7 @@
         "sort-package-json": "^2.10.0",
         "ts-loader": "^9.2.3",
         "ts-node": "^10.9.2",
+        "tsc-alias": "^1.8.10",
         "tsconfig-paths": "^4.2.0",
         "typescript": "^5.4.5"
     },
