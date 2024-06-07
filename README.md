@@ -46,15 +46,6 @@ All formats of phone numbers are supported, including:
 -   `(808)1234567`
 -   etc ...
 
-To activate, **install globally via npm**:
-
-```bash
-npm i -g alfred-open-whatsapp
-```
-
-<hr>
-<br>
-
 # Examples
 
 ## LIVE DEMO:

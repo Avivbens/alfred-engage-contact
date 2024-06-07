@@ -3,7 +3,7 @@ import type { PhoneNumber } from 'libphonenumber-js'
 import { parsePhoneNumber } from 'libphonenumber-js'
 import { exec } from 'node:child_process'
 import { promisify } from 'node:util'
-import type { ContactPayload } from '../models/contact-payload.model.js'
+import type { ContactPayload } from '@models/contact-payload.model.js'
 
 const execPrm = promisify(exec)
 
