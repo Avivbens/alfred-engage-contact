@@ -25,7 +25,6 @@
             "email": "avivbens87@gmail.com"
         }
     ],
-    "main": "dist/index.js",
     "scripts": {
         "prebuild": "rm -rf ./dist",
         "build": "tsc -p tsconfig.json && tsc-alias -p tsconfig.json",
