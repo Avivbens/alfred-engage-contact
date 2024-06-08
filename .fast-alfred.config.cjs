@@ -29,8 +29,6 @@ module.exports = {
         assets: ['./src/assets/contacts.node'],
         assetsDir: 'Release',
         targetDir: 'build',
-        outputFormat: 'esm',
-        esmHelpers: true,
     },
     workflowMetadata: {
         name: 'Engage Contact',

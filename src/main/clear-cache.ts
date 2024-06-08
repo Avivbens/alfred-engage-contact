@@ -1,5 +1,5 @@
 import { FastAlfred } from 'fast-alfred'
-import { CACHE_CONTACTS_KEY } from '@common/constants.js'
+import { CACHE_CONTACTS_KEY } from '@common/constants'
 
 ;(() => {
     const alfredClient = new FastAlfred()

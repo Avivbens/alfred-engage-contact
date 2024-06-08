@@ -1,9 +1,9 @@
 import { FastAlfred } from 'fast-alfred'
 import type { PhoneNumber } from 'libphonenumber-js'
 import { parsePhoneNumber } from 'libphonenumber-js'
-import { execPromise } from '@common/utils.js'
-import type { ContactPayload } from '@models/contact-payload.model.js'
-import { buildOpenUrl } from '@services/platform-url-builder.service.js'
+import { execPromise } from '@common/utils'
+import type { ContactPayload } from '@models/contact-payload.model'
+import { buildOpenUrl } from '@services/platform-url-builder.service'
 
 ;(async () => {
     const alfredClient = new FastAlfred()

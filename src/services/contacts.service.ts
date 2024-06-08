@@ -2,9 +2,9 @@ import type { FastAlfred } from 'fast-alfred'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import contacts from 'node-mac-contacts'
-import { CACHE_CONTACTS_KEY, CACHE_TTL } from '@common/constants.js'
-import { AuthStatus } from '@models/auth-status.enum.js'
-import type { IContact } from '@models/contact.model.js'
+import { CACHE_CONTACTS_KEY, CACHE_TTL } from '@common/constants'
+import { AuthStatus } from '@models/auth-status.enum'
+import type { IContact } from '@models/contact.model'
 
 export function isAuth(): boolean {
     const status: AuthStatus = contacts.getAuthStatus()

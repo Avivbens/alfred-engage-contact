@@ -1,5 +1,5 @@
-import type { ContactPayload } from '@models/contact-payload.model.js'
-import type { SupportedPlatform } from '@models/platform.model.js'
+import type { ContactPayload } from '@models/contact-payload.model'
+import type { SupportedPlatform } from '@models/platform.model'
 
 const PLATFORMS_URLS: Record<SupportedPlatform, (referrer: string) => string> = {
     whatsapp: (referrer: string) => `whatsapp://send?phone=${referrer}`,
