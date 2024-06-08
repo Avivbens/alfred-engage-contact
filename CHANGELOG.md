@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/Avivbens/alfred-engage-contact/compare/v3.0.3...v3.0.4) (2024-06-08)
+
+
+### Bug Fixes
+
+* remove `prefs` file ([9cc0049](https://github.com/Avivbens/alfred-engage-contact/commit/9cc004952cee2690318ef57fe395ce135fa4cf90))
+
 ## [3.0.3](https://github.com/Avivbens/alfred-engage-contact/compare/v3.0.2...v3.0.3) (2024-06-08)
 
 
