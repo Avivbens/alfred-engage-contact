@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/Avivbens/alfred-engage-contact/compare/v3.0.2...v3.0.3) (2024-06-08)
+
+
+### Bug Fixes
+
+* migrate to `cjs` moduling system ([9808170](https://github.com/Avivbens/alfred-engage-contact/commit/9808170bb595e397a87f933392f77ff2a42b0b02))
+
 ## [3.0.2](https://github.com/Avivbens/alfred-engage-contact/compare/v3.0.1...v3.0.2) (2024-06-07)
 
 
