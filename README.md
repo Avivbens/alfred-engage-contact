@@ -16,6 +16,12 @@
 
 Search contacts and engage with them via [Alfred](https://www.alfredapp.com/).
 
+### Fuzzy Search
+
+We support fuzzy search :ninja:
+
+You can search for a contact by typing a part of their name or phone number
+
 ### Install via GitHub Releases :sparkles:
 
 ```bash
