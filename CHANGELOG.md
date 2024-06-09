@@ -1,3 +1,10 @@
+## [3.0.5](https://github.com/Avivbens/alfred-engage-contact/compare/v3.0.4...v3.0.5) (2024-06-09)
+
+
+### Bug Fixes
+
+* add `uid` to allow alfred knowledge ([7b09038](https://github.com/Avivbens/alfred-engage-contact/commit/7b09038bd9f5b7838c937069b0bffe0d91b75f56))
+
 ## [3.0.4](https://github.com/Avivbens/alfred-engage-contact/compare/v3.0.3...v3.0.4) (2024-06-08)
 
 
