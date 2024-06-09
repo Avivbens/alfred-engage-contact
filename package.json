@@ -37,7 +37,7 @@
         "test": "jest"
     },
     "dependencies": {
-        "fast-alfred": "^2.0.0",
+        "fast-alfred": "^2.1.1",
         "fuse.js": "^7.0.0",
         "libphonenumber-js": "^1.11.2",
         "node-mac-contacts": "^1.7.2"

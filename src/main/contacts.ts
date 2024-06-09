@@ -48,12 +48,14 @@ import { searchContacts } from '@services/search.service'
             const phoneSubtitle = phoneNumbers.length ? `Phone: ${phoneNumbers[0]}` : ''
 
             const subtitle = [phoneSubtitle, emailSubtitle].filter(Boolean).join(' | ')
+            const arg = JSON.stringify(payload)
 
             return {
                 title: `${firstName} ${lastName}`,
                 subtitle,
-                arg: JSON.stringify(payload),
-            }
+                arg,
+                uid: arg,
+            } satisfies AlfredScriptFilter['items'][number]
         })
         .filter(({ subtitle }) => subtitle)
 
