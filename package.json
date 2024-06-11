@@ -32,7 +32,6 @@
         "lint": "eslint \"{src,test}/**/*.ts\"",
         "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix",
         "prepare": "husky || exit 0",
-        "prepublish": "npm run build",
         "start:dev": "node dist/index.js --inspect",
         "test": "jest"
     },
