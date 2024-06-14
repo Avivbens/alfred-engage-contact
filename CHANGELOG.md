@@ -1,3 +1,10 @@
+## [3.0.6](https://github.com/Avivbens/alfred-engage-contact/compare/v3.0.5...v3.0.6) (2024-06-14)
+
+
+### Bug Fixes
+
+* bump-up `fast-alfred`, align to Alfred best-practices ([52fd80e](https://github.com/Avivbens/alfred-engage-contact/commit/52fd80e2145822b48ed6fd4459ea2f2ae1a88717))
+
 ## [3.0.5](https://github.com/Avivbens/alfred-engage-contact/compare/v3.0.4...v3.0.5) (2024-06-09)
 
 
