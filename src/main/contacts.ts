@@ -31,9 +31,14 @@ import { searchContacts } from '@services/search.service'
         parser: Number,
     })
 
+    const fuzzyThreshold: number = alfredClient.env.getEnv(Variables.FUZZY_THRESHOLD, {
+        defaultValue: 0.4,
+        parser: (input) => Number(input) / 10,
+    })
+
     const contacts: IContact[] = getContacts(alfredClient)
 
-    const filteredContacts = await searchContacts(contacts, searchTerm, sliceAmount)
+    const filteredContacts = await searchContacts(contacts, searchTerm, sliceAmount, fuzzyThreshold)
 
     const items: AlfredScriptFilter['items'] = filteredContacts
         .map(({ firstName, lastName, phoneNumbers, emailAddresses }: IContact) => {

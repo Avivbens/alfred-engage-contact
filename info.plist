@@ -1454,6 +1454,31 @@ https://github.com/Avivbens/alfred-engage-contact</string>
         <key>variable</key>
         <string>slice_amount</string>
       </dict>
+      <dict>
+        <key>config</key>
+        <dict>
+          <key>defaultvalue</key>
+          <integer>4</integer>
+          <key>markercount</key>
+          <integer>10</integer>
+          <key>maxvalue</key>
+          <integer>10</integer>
+          <key>minvalue</key>
+          <integer>0</integer>
+          <key>onlystoponmarkers</key>
+          <true></true>
+          <key>showmarkers</key>
+          <true></true>
+        </dict>
+        <key>description</key>
+        <string>A number between 1-10. A higher number would be less accurate, but more dynamic.</string>
+        <key>label</key>
+        <string>Fuzzy search accuracy</string>
+        <key>type</key>
+        <string>slider</string>
+        <key>variable</key>
+        <string>fuzzy_threshold</string>
+      </dict>
     </array>
     <key>version</key>
     <string>3.0.6</string>
