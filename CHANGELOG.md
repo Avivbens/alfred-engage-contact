@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/Avivbens/alfred-engage-contact/compare/v3.0.6...v3.1.0) (2024-07-02)
+
+
+### Features
+
+* support dynamic fuzzy threshold ([357bbeb](https://github.com/Avivbens/alfred-engage-contact/commit/357bbeb5381c2f43c8fffca505ceff70edf93ee1))
+
 ## [3.0.6](https://github.com/Avivbens/alfred-engage-contact/compare/v3.0.5...v3.0.6) (2024-06-14)
 
 
