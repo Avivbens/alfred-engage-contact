@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/Avivbens/alfred-engage-contact/compare/v3.1.0...v3.1.1) (2025-02-22)
+
+
+### Bug Fixes
+
+* upgrade libphonenumber-js from 1.11.3 to 1.11.19 ([125e2de](https://github.com/Avivbens/alfred-engage-contact/commit/125e2de189882a14db83d51b55d78a8860b90ced))
+
 # [3.1.0](https://github.com/Avivbens/alfred-engage-contact/compare/v3.0.6...v3.1.0) (2024-07-02)
 
 
