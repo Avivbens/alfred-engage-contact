@@ -1,3 +1,10 @@
+## [3.1.2](https://github.com/Avivbens/alfred-engage-contact/compare/v3.1.1...v3.1.2) (2025-06-24)
+
+
+### Bug Fixes
+
+* upgrade fast-alfred from 2.1.2 to 2.3.1 ([5250fe1](https://github.com/Avivbens/alfred-engage-contact/commit/5250fe1becdec12d9ba79dd7293ab0d7792e9f1a))
+
 ## [3.1.1](https://github.com/Avivbens/alfred-engage-contact/compare/v3.1.0...v3.1.1) (2025-02-22)
 
 
