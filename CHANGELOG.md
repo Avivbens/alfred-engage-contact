@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/Avivbens/alfred-engage-contact/compare/v3.1.3...v3.2.0) (2025-09-16)
+
+
+### Features
+
+* **facetime:** support facetime calling ([647c0b3](https://github.com/Avivbens/alfred-engage-contact/commit/647c0b311902ffd5c1ef4d029aa1a2aa6c2e4208))
+
 ## [3.1.3](https://github.com/Avivbens/alfred-engage-contact/compare/v3.1.2...v3.1.3) (2025-09-01)
 
 
