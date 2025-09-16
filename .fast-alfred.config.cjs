@@ -8,6 +8,7 @@ Supported apps:
 - Call
 - WhatsApp
 - Email
+- FaceTime (Audio & Video)
 
 See the workflow codebase in here:
 ${homepage}
