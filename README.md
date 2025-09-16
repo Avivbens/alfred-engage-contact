@@ -45,6 +45,8 @@ A list of all matched contacts will be displayed, and you can select a contact b
 -   SMS: `ecs`
 -   Call: `ecc`
 -   Mail: `ecm`
+-   FaceTime Audio: `ecfa`
+-   FaceTime Video: `ecf`
 
 Once you select a contact, the workflow will open the related app with the selected contact.
 

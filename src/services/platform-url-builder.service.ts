@@ -6,6 +6,8 @@ const PLATFORMS_URLS: Record<SupportedPlatform, (referrer: string) => string> = 
     sms: (referrer: string) => `sms:${referrer}`,
     call: (referrer: string) => `tel:${referrer}`,
     mail: (referrer: string) => `mailto:${referrer}`,
+    facetime: (referrer: string) => `facetime:${referrer}`,
+    facetimeaudio: (referrer: string) => `facetime-audio:${referrer}`,
 }
 
 const EXTRACT_REFERRER: Record<SupportedPlatform, keyof ContactPayload> = {
@@ -13,6 +15,8 @@ const EXTRACT_REFERRER: Record<SupportedPlatform, keyof ContactPayload> = {
     mail: 'emailAddress',
     sms: 'phoneNumber',
     whatsapp: 'phoneNumber',
+    facetime: 'phoneNumber',
+    facetimeaudio: 'phoneNumber',
 }
 
 export function buildOpenUrl(platform: SupportedPlatform, payload: ContactPayload): string {
@@ -23,7 +27,6 @@ export function buildOpenUrl(platform: SupportedPlatform, payload: ContactPayloa
     }
 
     const referrerKey = EXTRACT_REFERRER[platform]
-
     if (!referrerKey) {
         throw new Error(`Unsupported platform: ${platform}`)
     }
