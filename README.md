@@ -12,6 +12,20 @@
 
 </div>
 
+## :warning: Deprecated Repository Notice
+
+> **Important:** This repository is now deprecated. We have moved all our Alfred workflows into a unified monorepo for better maintenance and collaboration.
+>
+> [Avivbens/alfredo](https://github.com/Avivbens/alfredo?tab=readme-ov-file)
+
+---
+
+## Unified Alfred Workflows Monorepo
+
+We've consolidated all of our Alfred workflows into a single, streamlined monorepo. This centralized repository makes it easier to explore, update, and contribute to a variety of workflows - all in one place.
+
+Feel free to open issues, submit pull requests, and stay tuned for further updates as we continue enhancing our Alfred workflows!
+
 ## Description
 
 Search contacts and engage with them via [Alfred](https://www.alfredapp.com/).
